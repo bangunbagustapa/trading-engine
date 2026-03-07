@@ -54,3 +54,29 @@ sudo systemctl enable docker
 sudo docker --version
 sudo docker compose version
 ```
+
+## 4. Deploy
+
+### 4.1 Clone Project
+```bash
+cd /opt
+sudo git clone https://github.com/bangunbagustapa/trading-engine.git
+cd trading-engine/deployment
+```
+
+### 4.2 Configure Environment
+```bash
+cp .env.example .env
+nano .env
+```
+
+### 4.3 Start Services
+```bash
+sudo docker compose up -d
+```
+
+### 4.4 Check Status
+```bash
+sudo docker compose ps
+sudo docker compose logs -f
+```
