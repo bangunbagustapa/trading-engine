@@ -33,6 +33,7 @@ services:
       - DB_POSTGRESDB_PASSWORD=${POSTGRES_NON_ROOT_PASSWORD}
       - N8N_RUNNERS_MODE=external
       - N8N_RUNNERS_AUTH_TOKEN=${N8N_RUNNERS_AUTH_TOKEN}
+      - N8N_SECURE_COOKIE=false
       - GENERIC_TIMEZONE=America/New_York
       - TZ=America/New_York
     ports:
